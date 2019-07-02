@@ -8,7 +8,9 @@ type QueryMod func(q *queries.Query)
 // Apply the query mods to the Query object
 func Apply(q *queries.Query, mods ...QueryMod) {
 	for _, mod := range mods {
-		mod(q)
+		if mod != nil {
+			mod(q)
+		}
 	}
 }
 
@@ -123,12 +125,11 @@ func From(from string) QueryMod {
 	}
 }
 
-func ForceIndex( index string) QueryMod {
+func ForceIndex(index string) QueryMod {
 	return func(q *queries.Query) {
 		queries.SetForceIndex(q, index)
 	}
 }
-
 
 // Limit the number of returned rows
 func Limit(limit int) QueryMod {
