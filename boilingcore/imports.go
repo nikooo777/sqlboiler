@@ -170,8 +170,8 @@ func newImporter() importer {
 			`"time"`,
 		},
 		thirdParty: importList{
-			`"github.com/lbryio/lbry.go/extras/errors"`,
-			`"github.com/lbryio/lbry.go/extras/null"`,
+			`"github.com/lbryio/lbry.go/v2/extras/errors"`,
+			`"github.com/lbryio/lbry.go/v2/extras/null"`,
 			`"github.com/lbryio/sqlboiler/boil"`,
 			`"github.com/lbryio/sqlboiler/queries"`,
 			`"github.com/lbryio/sqlboiler/queries/qm"`,
@@ -186,7 +186,7 @@ func newImporter() importer {
 				`"strings"`,
 			},
 			thirdParty: importList{
-				`"github.com/lbryio/lbry.go/extras/errors"`,
+				`"github.com/lbryio/lbry.go/v2/extras/errors"`,
 				`"github.com/lbryio/sqlboiler/boil"`,
 				`"github.com/lbryio/sqlboiler/queries"`,
 				`"github.com/lbryio/sqlboiler/queries/qm"`,
@@ -195,7 +195,7 @@ func newImporter() importer {
 		},
 		"boil_types": {
 			thirdParty: importList{
-				`"github.com/lbryio/lbry.go/extras/errors"`,
+				`"github.com/lbryio/lbry.go/v2/extras/errors"`,
 				`"github.com/lbryio/sqlboiler/strmangle"`,
 			},
 		},
@@ -228,7 +228,7 @@ func newImporter() importer {
 			},
 			thirdParty: importList{
 				`"github.com/kat-co/vala"`,
-				`"github.com/lbryio/lbry.go/extras/errors"`,
+				`"github.com/lbryio/lbry.go/v2/extras/errors"`,
 				`"github.com/lbryio/sqlboiler/boil"`,
 				`"github.com/spf13/viper"`,
 			},
@@ -266,7 +266,7 @@ func newImporter() importer {
 				`"strings"`,
 			},
 			thirdParty: importList{
-				`"github.com/lbryio/lbry.go/extras/errors"`,
+				`"github.com/lbryio/lbry.go/v2/extras/errors"`,
 				`"github.com/lbryio/sqlboiler/bdb/drivers"`,
 				`"github.com/lbryio/sqlboiler/randomize"`,
 				`_ "github.com/lib/pq"`,
@@ -286,7 +286,7 @@ func newImporter() importer {
 			},
 			thirdParty: importList{
 				`_ "github.com/go-sql-driver/mysql"`,
-				`"github.com/lbryio/lbry.go/extras/errors"`,
+				`"github.com/lbryio/lbry.go/v2/extras/errors"`,
 				`"github.com/lbryio/sqlboiler/bdb/drivers"`,
 				`"github.com/lbryio/sqlboiler/randomize"`,
 				`"github.com/spf13/viper"`,
@@ -303,7 +303,7 @@ func newImporter() importer {
 			},
 			thirdParty: importList{
 				`_ "github.com/denisenkom/go-mssqldb"`,
-				`"github.com/lbryio/lbry.go/extras/errors"`,
+				`"github.com/lbryio/lbry.go/v2/extras/errors"`,
 				`"github.com/lbryio/sqlboiler/bdb/drivers"`,
 				`"github.com/lbryio/sqlboiler/randomize"`,
 				`"github.com/spf13/viper"`,
@@ -316,55 +316,55 @@ func newImporter() importer {
 	// TranslateColumnType to see the type assignments.
 	imp.BasedOnType = mapImports{
 		"null.Float32": {
-			thirdParty: importList{`"github.com/lbryio/lbry.go/extras/null"`},
+			thirdParty: importList{`"github.com/lbryio/lbry.go/v2/extras/null"`},
 		},
 		"null.Float64": {
-			thirdParty: importList{`"github.com/lbryio/lbry.go/extras/null"`},
+			thirdParty: importList{`"github.com/lbryio/lbry.go/v2/extras/null"`},
 		},
 		"null.Int": {
-			thirdParty: importList{`"github.com/lbryio/lbry.go/extras/null"`},
+			thirdParty: importList{`"github.com/lbryio/lbry.go/v2/extras/null"`},
 		},
 		"null.Int8": {
-			thirdParty: importList{`"github.com/lbryio/lbry.go/extras/null"`},
+			thirdParty: importList{`"github.com/lbryio/lbry.go/v2/extras/null"`},
 		},
 		"null.Int16": {
-			thirdParty: importList{`"github.com/lbryio/lbry.go/extras/null"`},
+			thirdParty: importList{`"github.com/lbryio/lbry.go/v2/extras/null"`},
 		},
 		"null.Int32": {
-			thirdParty: importList{`"github.com/lbryio/lbry.go/extras/null"`},
+			thirdParty: importList{`"github.com/lbryio/lbry.go/v2/extras/null"`},
 		},
 		"null.Int64": {
-			thirdParty: importList{`"github.com/lbryio/lbry.go/extras/null"`},
+			thirdParty: importList{`"github.com/lbryio/lbry.go/v2/extras/null"`},
 		},
 		"null.Uint": {
-			thirdParty: importList{`"github.com/lbryio/lbry.go/extras/null"`},
+			thirdParty: importList{`"github.com/lbryio/lbry.go/v2/extras/null"`},
 		},
 		"null.Uint8": {
-			thirdParty: importList{`"github.com/lbryio/lbry.go/extras/null"`},
+			thirdParty: importList{`"github.com/lbryio/lbry.go/v2/extras/null"`},
 		},
 		"null.Uint16": {
-			thirdParty: importList{`"github.com/lbryio/lbry.go/extras/null"`},
+			thirdParty: importList{`"github.com/lbryio/lbry.go/v2/extras/null"`},
 		},
 		"null.Uint32": {
-			thirdParty: importList{`"github.com/lbryio/lbry.go/extras/null"`},
+			thirdParty: importList{`"github.com/lbryio/lbry.go/v2/extras/null"`},
 		},
 		"null.Uint64": {
-			thirdParty: importList{`"github.com/lbryio/lbry.go/extras/null"`},
+			thirdParty: importList{`"github.com/lbryio/lbry.go/v2/extras/null"`},
 		},
 		"null.String": {
-			thirdParty: importList{`"github.com/lbryio/lbry.go/extras/null"`},
+			thirdParty: importList{`"github.com/lbryio/lbry.go/v2/extras/null"`},
 		},
 		"null.Bool": {
-			thirdParty: importList{`"github.com/lbryio/lbry.go/extras/null"`},
+			thirdParty: importList{`"github.com/lbryio/lbry.go/v2/extras/null"`},
 		},
 		"null.Time": {
-			thirdParty: importList{`"github.com/lbryio/lbry.go/extras/null"`},
+			thirdParty: importList{`"github.com/lbryio/lbry.go/v2/extras/null"`},
 		},
 		"null.JSON": {
-			thirdParty: importList{`"github.com/lbryio/lbry.go/extras/null"`},
+			thirdParty: importList{`"github.com/lbryio/lbry.go/v2/extras/null"`},
 		},
 		"null.Bytes": {
-			thirdParty: importList{`"github.com/lbryio/lbry.go/extras/null"`},
+			thirdParty: importList{`"github.com/lbryio/lbry.go/v2/extras/null"`},
 		},
 		"time.Time": {
 			standard: importList{`"time"`},
