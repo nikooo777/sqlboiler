@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	null "github.com/lbryio/lbry.go/extras/null"
+	null "github.com/lbryio/lbry.go/v2/extras/null"
 )
 
 type testObj struct {
