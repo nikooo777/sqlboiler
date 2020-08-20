@@ -5,9 +5,9 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/pkg/errors"
 	"github.com/lbryio/sqlboiler/boil"
 	"github.com/lbryio/sqlboiler/strmangle"
+	"github.com/pkg/errors"
 )
 
 type loadRelationshipState struct {
@@ -259,9 +259,13 @@ func collectLoaded(key string, loadingFrom reflect.Value) (reflect.Value, bindKi
 	for {
 		switch bkind {
 		case kindStruct:
-			collection = reflect.Append(collection, loadedObject)
+			if !loadedObject.IsNil() {
+				collection = reflect.Append(collection, loadedObject)
+			}
 		case kindPtrSliceStruct:
-			collection = reflect.AppendSlice(collection, loadedObject)
+			if !loadedObject.IsNil() {
+				collection = reflect.AppendSlice(collection, loadedObject)
+			}
 		}
 
 		i++
